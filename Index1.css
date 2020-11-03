@@ -1,0 +1,7 @@
+.item1 {font-family: Arial, Helvetica, sans-serif;font-size: 350%; }
+.item2 {border-collapse: collapse; border-width: 4px; border-style: round;}
+.item3 {border-collapse: collapse; border-width: 4px; font-size: 200%;}
+.item4 {border-collapse: collapse; border-width: 4px;text-align: center;font-size: 200%}
+.item5 {text-decoration: none;}
+a {color:inherit;}
+a:hover {text-decoration: underline;color: greenyellow;}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tugas2.css">
+    <title>Form Mahasiswa USU</title>
+</head>
+<body bgcolor="lightskyblue">
+    <h1 class="item1">
+        Selamat Datang di Fakultas Ilmu Komputer dan Teknologi Informasi
+    </h1>
+    <h2 class="item1">
+        Silahkan Daftarkan Akun Anda
+    </h2>
+</body>
+<body>
+    <form action="daftar.php" method="post">
+        <fieldset class="item2">
+            <legend class="item3">Akun</legend>
+            <table>
+                <tr>
+                    <td><label for="Username">Username</label></td>
+                    <td><input type="text" name="Username" id="Username" class="item4" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Pass">Password</label></td>
+                    <td><input type="password" name="Password" id="Pass" class="item4" required minlength="8"></td>
+                </tr>
+                <tr>
+                    <td><label for="cPass">Konfirmasi Password</label></td>
+                    <td><input type="password" name="cPassword" id="cPass" class="item4" required></td>
+                </tr>           
+            </table>
+        </fieldset>
+        <fieldset class="item2">
+            <legend class="item3">Data Diri</legend>
+            <table>
+                <tr>
+                    <td><label for="Nama">Nama Lengkap</label> </td>
+                    <td><input type="text" name="Nama Lengkap" id="Nama" class="item4" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Tempat Lahir">Tempat Lahir</label></td>
+                    <td><input type="text" name="Tempat Lahir" id="Tempat Lahir" class="item4" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Tanggal Lahir">Tanggal Lahir</label></td>
+                    <td><input type="date" name="Tanggal Lahir" class="item4" required></td>
+                </tr>
+            </table>
+                <tr>
+                    <th><label for="">Jenis Kelamin</label></th>
+                    <th><input type="radio" name="Jenis Kelamin" id="Jenis Kelamin1" class="item5">Pria</th>
+                    <th><input type="radio" name="Jenis Kelamin" id="Jenis Kelamin2">Wanita</th><br>
+                </tr>
+                <tr>
+                    <td><label for="" class="item6">Hobi</label></td>
+                    <td><input type="checkbox" name="Hobi1" class="item7">Membaca</td>
+                    <td><input type="checkbox" name="Hobi2">Menulis</td>
+                    <td><input type="checkbox" name="Hobi3" class="item8">Menonton</td><br>
+                    <td><input type="checkbox" name="Hobi4" class="item9">Memasak</td>
+                    <td><input type="checkbox" name="Hobi5">Fotografi</td>
+                    <td><input type="checkbox" name="Hobi6">Travelling</td><br><br>
+                </tr>
+                <select name="jurusan" id="" class="item4">
+                    <option value="" class="item4">Silahkan Pilih Jurusan Anda</option>
+                    <option value="S1TI" class="item4">Teknologi Informasi</option>
+                    <option value="S1ILKOM" class="item4">Ilmu Komputer</option>
+                </select>
+                <p>
+                    <input type="submit" value="Daftar"class="item10">
+                    <button type="reset" class="item11">Reset</button>
+                </p>
+        </fieldset>
+                <p>
+                    <textarea name="Komplain" cols="58" rows="10" class="item12" placeholder="Masukkan Kritik dan Saran Anda"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Kirim" class="item13">
+                </p>
+    </form>
+    
+</body>
+</html>
